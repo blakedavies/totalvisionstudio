@@ -1,0 +1,156 @@
+/* FONTS */
+	@font-face {
+		font-family:'Jura';
+		src:url('../fonts/Jura/Jura.eot');
+		src:url('../fonts/Jura/Jura.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Jura/Jura.woff2') format('woff2'),
+		url('../fonts/Jura/Jura.woff') format('woff'),
+		url('../fonts/Jura/Jura.ttf') format('truetype'),
+		url('../fonts/Jura/Jura.svg#svgFontName') format('svg');
+	}
+	@font-face {
+		font-family:'Bebas';
+		src:url('../fonts/Bebas/Bebas.eot');
+		src:url('../fonts/Bebas/Bebas.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Bebas/Bebas.woff2') format('woff2'),
+		url('../fonts/Bebas/Bebas.woff') format('woff'),
+		url('../fonts/Bebas/Bebas.ttf') format('truetype'),
+		url('../fonts/Bebas/Bebas.svg#svgFontName') format('svg');
+	}
+	@font-face {
+		font-family:'Quicksand';
+		src:url('../fonts/Quicksand/Quicksand.eot');
+		src:url('../fonts/Quicksand/Quicksand.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Quicksand/Quicksand.woff2') format('woff2'),
+		url('../fonts/Quicksand/Quicksand.woff') format('woff'),
+		url('../fonts/Quicksand/Quicksand.ttf') format('truetype'),
+		url('../fonts/Quicksand/Quicksand.svg#svgFontName') format('svg');
+	}
+/* STANDARD CSS */
+	* {
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		-webkit-backface-visibility:hidden;
+		-webkit-transition:none;
+	}
+	html {
+		overflow-x:hidden;
+	}
+	body {
+		overflow-x:hidden;
+		margin:0;
+		padding:0;
+	}
+	a {
+		text-decoration:none;
+	}
+	div.loader {
+		-webkit-position:fixed;
+		-moz-position:fixed;
+		-o-position:fixed;
+		-ms-position:fixed;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		-webkit-z-index:9999;
+		-moz-z-index:9999;
+		-o-z-index:9999;
+		-ms-z-index:9999;
+		z-index:9999;
+		background:url('../img/loading_icon_spinner.gif') 50% 50% no-repeat rgb(5,6,8);
+	}
+/* HOME */
+	#home div.parallax-window {
+		height:100vh;
+		background-image:url("../img/camera_lens_background.jpg");
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		-ms-background-size:cover;
+		background-size:cover;
+		background-position:50% 50%;
+	}
+	#home div.parallax-window h1 {
+		margin:0;
+		text-align:center;
+		font-family:'Jura';
+		color:rgb(0,0,0);
+		font-size:18px;
+	}
+	#home div.parallax-window div.box {
+		text-align:center;
+		position:absolute;
+		padding-bottom:116px;
+		width:100%;
+		bottom:50%;
+		left:50%;
+		-webkit-transform:translate(-50%, 50%);
+		-moz-transform:translate(-50%, 50%);
+		-o-transform:translate(-50%, 50%);
+		-ms-transform:translate(-50%, 50%);
+		transform:translate(-50%, 50%);
+	}
+	#home div.parallax-window div.box img {
+		width:70vmin;
+		height:auto;
+	}
+	#home div.parallax-window div.box p {
+		font-size:3.75vmin;
+		font-weight:100;
+		font-family:'Verdana';
+		color:rgb(255,255,255);
+		margin-bottom:0;
+	}
+	#home footer {
+		background-color:rgb(45,46,48);
+		text-align:center;
+		position:absolute;
+		width:100%;
+		bottom:0;
+	}
+	#home footer a div.layer.powered-by {
+		background-color:rgb(255,255,255);
+	}
+	#home footer a div.layer div.container.powered-by {
+		width:100%;
+		max-width:1200px;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+		text-align:center;
+		padding:15px;
+	}
+	#home footer a div.layer div.container.powered-by p {
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
+		font-size:15px;
+		margin-top:0;
+		margin-bottom:5px;
+	}
+	#home footer a div.layer div.container.powered-by img {
+		width:30px;
+		height:auto;
+		margin:0;
+	}
+	#home footer a div.layer div.container.powered-by p:nth-child(3) {
+		display:inline;
+		font-family:'Bebas';
+		color:rgb(25,27,29);
+		font-size:15px;
+		font-weight:800;
+		letter-spacing:3.75px;
+		padding-left:3.75px;
+	}
+	#home footer a div.layer div.container.powered-by p:nth-child(4) {
+		font-family:'Quicksand';
+		color:rgb(25,27,29);
+		font-size:12.5px;
+		margin-top:15px;
+		margin-bottom:0;
+	}
+	
